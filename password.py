@@ -191,7 +191,7 @@ def login():
         email = plaintext[1]
 
         account_data = plaintext[2:]
-        if account_data[0] != '':
+        if account_data[0] != []:
             passwords = read_passwords(account_data)
         else:
             passwords = []
