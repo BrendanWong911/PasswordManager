@@ -410,6 +410,7 @@ def add_password(passwords):
         print("User has been inactive for 5 minutes: logged out")
         return 4, passwords
     passwords.append({"website": website, "username": username, "password": password})
+    os.system("cls")
     print("Added " + website)
     return 2, passwords
 
